@@ -101,7 +101,8 @@ t('advisor demo: hard fallback to final state', /setTimeout\(finishAdvisor, 8000
 t('advisor answer cites the record (4+ citations)', (html.match(/class="cite"/g) || []).length >= 4);
 t('match bar keeps the flag visible', /mseg flagseg/.test(html) && /Flagged: 1 of 10/.test(html));
 t('assessment: ten JD rows', (html.match(/class="arow reveal"/g) || []).length === 10);
-t('assessment: 7 direct, 2 adjacent, 1 flagged', (html.match(/chip direct/g) || []).length === 7 && (html.match(/chip adjacent/g) || []).length === 2 && (html.match(/chip flagchip/g) || []).length === 1);
+t('assessment: 8 direct, 1 adjacent, 1 flagged', (html.match(/chip direct/g) || []).length === 8 && (html.match(/chip adjacent/g) || []).length === 1 && (html.match(/chip flagchip/g) || []).length === 1);
+t('design-org row is direct: head of design in practice, ~25-person practice', /Head of design at Air Canada in practice/.test(html) && /about 25 people/.test(html));
 t('flagged line is specific: no healthcare experience', /No healthcare experience/.test(html));
 t('softened only Jose\'s way (fewer reps, not missing skill)', /fewer daily reps, not a missing skill/.test(html));
 t('two testimonial bands, dark then light', /testimonial dark/.test(html) && /testimonial light/.test(html) && (html.match(/<blockquote>/g) || []).length === 2);
@@ -164,7 +165,7 @@ t(`external links use rel=noopener (${extLinks.length})`, extLinks.length > 0 &&
 t('reduced-motion respected (CSS + JS)', (html.match(/prefers-reduced-motion/g) || []).length >= 2);
 t('menu button carries aria-expanded', /aria-expanded/.test(html));
 t('advisor input labelled', /aria-label="Hiring question"/.test(html));
-t('match bar aria-label states the real split', /aria-label="Match: 7 of 10 direct, 2 of 10 adjacent, 1 of 10 flagged"/.test(html));
+t('match bar aria-label states the real split', /aria-label="Match: 8 of 10 direct, 1 of 10 adjacent, 1 of 10 flagged"/.test(html));
 t('images have alt text', ![...html.matchAll(/<img [^>]*>/g)].some(m => !/alt="/.test(m[0])));
 
 /* ---------- responsive ---------- */

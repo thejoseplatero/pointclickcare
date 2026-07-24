@@ -1,6 +1,6 @@
 <div class="vrow">
                 <span class="vk">Assessment</span>
-                <p>Direct evidence on 7 of 10 JD requirements: scaling a multi-disciplinary design org <span class="cite">45+ org</span>, design system standardization and adoption <span class="cite">Compass</span>, AI agents built and shipped <span class="cite">Jira agents</span>, executive-level influence <span class="cite">transformation council</span>, UX measured on business outcomes <span class="cite">2x membership</span>.</p>
+                <p>Direct evidence on 8 of 10 JD requirements: head of design in practice with a 25-person design practice <span class="cite">45+ org</span>, design system standardization and adoption <span class="cite">Compass</span>, AI agents built and shipped <span class="cite">Jira agents</span>, executive-level influence <span class="cite">transformation council</span>, UX measured on business outcomes <span class="cite">2x membership</span>.</p>
               </div>
               <div class="vrow">
                 <span class="vk">Flags</span>
