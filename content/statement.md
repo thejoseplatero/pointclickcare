@@ -1,0 +1,2 @@
+<blockquote>He didn't inherit the org. He built it: every practice, the manager layer, the design system, and the component library underneath it.</blockquote>
+        <p class="sub">Four practices at Air Canada: product, design, martech, adtech. One operating model. Getting a new team to its operating baseline used to take a quarter; it now takes days.</p>
