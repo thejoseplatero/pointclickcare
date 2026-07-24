@@ -63,7 +63,7 @@ section('css integrity');
     for (const ch of raw) { if (ch === '{') d++; if (ch === '}') d--; }
   }
   t('no orphaned top-level declarations', orphans.length === 0, orphans.join(' | '));
-  for (const rule of ['.herocard', '.badge', '.proofstrip', '.featgrid', '.console', '.atable', '.arow', '.testimonial', '.roles', '.mrow', '.rescards', '.rwell', '.morecard', '.planlist', 'footer ']) {
+  for (const rule of ['.herocard', '.badge', '.proofstrip', '.featgrid', '.console', '.atable', '.arow', '.testimonial', '.roles', '.mrow', '.rescards', '.rwell', '.morecard', 'footer ']) {
     t(`rule present: ${rule.trim()}`, css.includes(rule));
   }
 }
@@ -92,8 +92,9 @@ t('no auto-popup overlays', !/role="dialog"/.test(html));
 section('page anatomy');
 t('announcement strip: one short line', /class="announce"/.test(html) && /A personal application by Jose Platero\. Not affiliated with PointClickCare\./.test(html));
 t('h1 is the candidate, product-page style', /<h1>Jose Platero<\/h1>/.test(html));
-t('statement: built the org, stated plainly', /Built Air Canada's design organization: four practices/.test(html));
-t('numbers strip: 45+, 9M+, 2x, 1 design system', /data-count="45"/.test(html) && /data-count="9"/.test(html) && /data-count="2"/.test(html) && /data-count="1"/.test(html));
+t('statement: built the org, stated plainly', /Built Air Canada's design organization: the leadership team/.test(html));
+t('hero leads with design, not PM or martech', /Leads product design across Air Canada/.test(html));
+t('numbers strip: 25 design practice, 9M+, 2x, 1 design system', /data-count="25"/.test(html) && /data-count="9"/.test(html) && /data-count="2"/.test(html) && /data-count="1"/.test(html));
 t('count-ups have setTimeout fallback to final values', /setTimeout\(setFinal/.test(html) && /setTimeout\(fireStats, 6000\)/.test(html));
 t('4-up feature columns, verb-first titles', (html.match(/class="feat reveal"/g) || []).length === 4 && />Build the org</.test(html) && />Govern the system</.test(html) && />Ship with AI</.test(html) && />Own the outcomes</.test(html));
 t('advisor demo: 3 steps, wired run button', (html.match(/class="step"/g) || []).length === 3 && /runbtn\.addEventListener\('click', runAdvisor\)/.test(html));
@@ -108,8 +109,8 @@ t('softened only Jose\'s way (fewer reps, not missing skill)', /fewer daily reps
 t('two testimonial bands, dark then light', /testimonial dark/.test(html) && /testimonial light/.test(html) && (html.match(/<blockquote>/g) || []).length === 2);
 t('testimonial quotes are verbatim from the mentions ledger', /people, culture change, and communication/.test(html) && /connecting Jira with Claude via MCP/.test(html));
 t('joseplatero.com promoted as its own panel', /The full record is live\./.test(html));
-t('90-day plan maps to JD responsibilities', /Clarify decision rights/.test(html) && /Govern the system/.test(html) && /Redefine how design operates with AI/.test(html) && /Listen first/.test(html));
-t('plan 04 carries the architect thesis in Jose\'s framing', /people make the decisions/.test(html) && /from builder to architect/.test(html));
+t('no invented 90-day plan (not in the JD)', !/First 90 days|90-day/.test(html));
+t('architect thesis lives in the AI card, in Jose\'s framing', /people make the decisions/.test(html) && /from builder to architect/.test(html));
 
 /* ---------- media: featured row + their resources card row ---------- */
 section('media');

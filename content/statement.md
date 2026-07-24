@@ -1,1 +1,1 @@
-<p>Built Air Canada's design organization: four practices, the leadership team, the ways of working, and the Compass design system under every product, from customer apps to crew tools.</p>
+<p>Built Air Canada's design organization: the leadership team, the ways of working, and the Compass design system under every product, from customer apps to crew tools.</p>
