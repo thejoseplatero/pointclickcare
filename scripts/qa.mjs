@@ -107,7 +107,8 @@ t('softened only Jose\'s way (fewer reps, not missing skill)', /fewer daily reps
 t('two testimonial bands, dark then light', /testimonial dark/.test(html) && /testimonial light/.test(html) && (html.match(/<blockquote>/g) || []).length === 2);
 t('testimonial quotes are verbatim from the mentions ledger', /people, culture change, and communication/.test(html) && /connecting Jira with Claude via MCP/.test(html));
 t('joseplatero.com promoted as its own panel', /The full record is live\./.test(html));
-t('90-day plan maps to JD responsibilities', /Clarify decision rights/.test(html) && /Govern the system/.test(html) && /Make AI adoption real/.test(html) && /Listen first/.test(html));
+t('90-day plan maps to JD responsibilities', /Clarify decision rights/.test(html) && /Govern the system/.test(html) && /Redefine how design operates with AI/.test(html) && /Listen first/.test(html));
+t('plan 04 carries the architect thesis in Jose\'s framing', /people make the decisions/.test(html) && /from builder to architect/.test(html));
 
 /* ---------- media: featured row + their resources card row ---------- */
 section('media');
