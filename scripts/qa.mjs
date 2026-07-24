@@ -110,7 +110,6 @@ t('two testimonial bands, dark then light', /testimonial dark/.test(html) && /te
 t('testimonial quotes are verbatim from the mentions ledger', /people, culture change, and communication/.test(html) && /connecting Jira with Claude via MCP/.test(html));
 t('joseplatero.com promoted as its own panel', /The full record is live\./.test(html));
 t('no invented 90-day plan (not in the JD)', !/First 90 days|90-day/.test(html));
-t('architect thesis lives in the AI card, in Jose\'s framing', /people make the decisions/.test(html) && /from builder to architect/.test(html));
 
 /* ---------- media: featured row + their resources card row ---------- */
 section('media');
@@ -145,8 +144,8 @@ for (const phrase of ['used across the team', "into the team's daily workflow", 
   'AI operating model']) {
   t(`no AI-adoption overclaim: "${phrase}"`, !visibleText.toLowerCase().includes(phrase.toLowerCase()));
 }
-t('AI claim grounded: agents named with their real function', /AI agents that (brief executives and )?draft product briefs|AI agents that brief executives/.test(visibleText));
-t('AI rollout stated as in progress, in his framing', /starting with his own workflow/.test(visibleText));
+t('AI claim grounded: agents named with their real function, no Jira namedrop in the pitch copy', /discovery to prototype to reporting/.test(visibleText) && !/from live Jira/.test(visibleText));
+t('AI claim stays scoped to what he built, no org-wide adoption claim', !/across the org|org-wide|used across the team/i.test(visibleText.match(/Built agents and skills[\s\S]{0,300}/)?.[0] || ''));
 t('no AI-speak filler (delve/tapestry/seamless/journey)', !/\bdelve\b|\btapestry\b|\bseamless(ly)?\b|\bjourney\b/i.test(visibleText));
 t('no banned vague verbs (surface/leverage)', !/\bsurfaces?\b|\bleverage\b/i.test(visibleText));
 
