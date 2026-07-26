@@ -3,9 +3,10 @@
         <div class="mrow reveal">
           <div class="mmedia"><video controls preload="none" poster="https://joseplatero.com/assets/posters/webby.jpg" src="https://joseplatero.com/assets/talks/product-led-alliance-summit.mp4"></video></div>
           <div class="mtext">
-            <p class="eyebrow">Keynote</p>
+            <p class="eyebrow">Recognition</p>
             <h3>Webby Honoree</h3>
-            <p>The Work Behind the Work: Meta-wins from Air Canada's Homepage Launch. Product-Led Alliance Summit, Toronto.</p>
+            <p>The Air Canada homepage rebuild: rebuilt navigation to convert and sell more than flights, not just show them.</p>
+            <a class="btn outline" href="https://winners.webbyawards.com/2025/websites-and-mobile-sites/features-design/best-user-experience/324614/air-canada-homepage" target="_blank" rel="noopener">Webby listing <i class="chev">&rsaquo;</i></a>
           </div>
         </div>
         <div class="rescards">
@@ -24,7 +25,7 @@
             <div class="rwell"><img src="https://joseplatero.com/assets/photos/panel-mic.jpg" alt="Jose speaking on the Leaders in Design panel, co-panelists beside him" loading="lazy"></div>
             <p class="eyebrow">Panel</p>
             <h3>Leaders in Design</h3>
-            <p>BrainStation's User-Centred Innovation panel.</p>
+            <p>BrainStation's Leaders in Design: User-Centred Innovation panel.</p>
           </div>
           <div class="rcard reveal">
             <div class="rwell" aria-hidden="true"><svg viewBox="0 0 400 275" xmlns="http://www.w3.org/2000/svg" role="img">
@@ -43,7 +44,7 @@
             </svg></div>
             <p class="eyebrow">Podcast</p>
             <h3>Pragmatism in Practice</h3>
-            <p>Product Innovation: Charting Your Course, with Thoughtworks.</p>
+            <p>Product Innovation: Charting Your Own Course, with Thoughtworks.</p>
             <a class="btn outline" href="https://www.thoughtworks.com/en-ca/insights/podcasts/pragmatism-in-practice/product-innovation-charting-your-own-course" target="_blank" rel="noopener">Listen to the episode <i class="chev">&rsaquo;</i></a>
           </div>
         </div>
