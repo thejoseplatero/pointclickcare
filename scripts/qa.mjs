@@ -118,13 +118,13 @@ t('no invented venue/keynote framing for the Webby video', !/Product-Led Allianc
 t('Webby card links to the real Webby Awards listing, like the story site does', /winners\.webbyawards\.com\/2025\/websites-and-mobile-sites\/features-design\/best-user-experience\/324614\/air-canada-homepage/.test(html));
 t('four uniform resource cards', (html.match(/class="rcard reveal"/g) || []).length === 4);
 t('media wells share one aspect ratio (the size chaos fix)', /\.rwell \{[^}]*aspect-ratio: 16 \/ 11/.test(html) && /\.mmedia video \{[\s\S]{0,200}?aspect-ratio: 16 \/ 9/.test(html));
-t('three videos: keynote, workshop, reel', (html.match(/<video /g) || []).length === 3 && /bts-1\.mp4/.test(html) && /behind-the-work\.mp4/.test(html));
-t('all videos lazy (preload=none) with posters', (html.match(/preload="none"/g) || []).length === 3 && (html.match(/poster="https:\/\/joseplatero\.com\/assets\/posters\//g) || []).length === 3);
-t('videos have controls, no autoplay', (html.match(/<video controls/g) || []).length === 3 && !/autoplay/.test(html));
+t('four videos: honoree clip, workshop, reel, bts', (html.match(/<video /g) || []).length === 4 && /bts-1\.mp4/.test(html) && /behind-the-work\.mp4/.test(html) && /bts-3\.mp4/.test(html));
+t('all videos lazy (preload=none) with posters', (html.match(/preload="none"/g) || []).length === 4 && (html.match(/poster="https:\/\/joseplatero\.com\/assets\/posters\//g) || []).length === 4);
+t('videos have controls, no autoplay', (html.match(/<video controls/g) || []).length === 4 && !/autoplay/.test(html));
 t('real titles only, from the story site and the resume',
   />Webby Honoree</.test(html) && />Design System Workshop</.test(html) && />Behind the Work</.test(html) && />Leaders in Design</.test(html));
-t('podcast card: original soundwave art in PCC colors, not the TW cover',
-  /<rect width="400" height="275" fill="#435030"\/>/.test(html) && (html.match(/<line x1="/g) || []).length === 9 && !/\/tw/.test(visibleText));
+t('podcast card: bts-3 clip, labeled generically (not claimed as footage of that recording)',
+  /bts-3\.mp4/.test(html) && !/recording the (Thoughtworks|podcast)/i.test(visibleText));
 t('podcast card: exact episode title (Own included), outlined listen button', /Product Innovation: Charting Your Own Course/.test(html) && /btn outline" href="https:\/\/www\.thoughtworks\.com[^"]*charting-your-own-course/.test(html));
 t('leaders in design photo with real alt text', /panel-mic\.jpg/.test(html) && /Leaders in Design panel/.test(html));
 t('all media served from joseplatero.com, none vendored', !/src="assets\//.test(html));
