@@ -28,7 +28,20 @@
             <p>BrainStation's Leaders in Design: User-Centred Innovation panel.</p>
           </div>
           <div class="rcard reveal">
-            <div class="rwell"><video controls preload="none" poster="https://joseplatero.com/assets/posters/pitching.jpg" src="https://joseplatero.com/assets/behind-the-scenes/bts-3.mp4"></video></div>
+            <div class="rwell" aria-hidden="true"><svg viewBox="0 0 400 275" xmlns="http://www.w3.org/2000/svg" role="img">
+              <rect width="400" height="275" fill="#435030"/>
+              <g transform="rotate(-32 200 137)" stroke-linecap="round">
+                <line x1="60" y1="40" x2="60" y2="235" stroke="#FBF8F3" stroke-width="14"/>
+                <line x1="92" y1="70" x2="92" y2="205" stroke="#F3FEDA" stroke-width="14"/>
+                <line x1="124" y1="100" x2="124" y2="175" stroke="#FBF8F3" stroke-width="14"/>
+                <line x1="156" y1="122" x2="156" y2="152" stroke="#EBDDC4" stroke-width="14"/>
+                <line x1="188" y1="112" x2="188" y2="162" stroke="#FBF8F3" stroke-width="14"/>
+                <line x1="220" y1="90" x2="220" y2="185" stroke="#F3FEDA" stroke-width="14"/>
+                <line x1="252" y1="60" x2="252" y2="215" stroke="#FBF8F3" stroke-width="14"/>
+                <line x1="284" y1="85" x2="284" y2="190" stroke="#EBDDC4" stroke-width="14"/>
+                <line x1="316" y1="110" x2="316" y2="165" stroke="#FBF8F3" stroke-width="14"/>
+              </g>
+            </svg></div>
             <p class="eyebrow">Podcast</p>
             <h3>Pragmatism in Practice</h3>
             <p>Product Innovation: Charting Your Own Course, with Thoughtworks.</p>
