@@ -283,16 +283,16 @@ nav {
 @media (max-width: 520px) { .rescards { grid-template-columns: 1fr; } }
 
 /* ---------- more (joseplatero.com) ---------- */
-.more { padding: 40px 0; }
+.more { padding: 56px 0; }
 .morecard {
   background: var(--forest); color: #fff; border-radius: var(--radius-band);
-  padding: 56px 48px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 36px; align-items: center;
+  padding: 72px 56px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 36px; align-items: center;
 }
-.morecard h2 { max-width: 20ch; }
-.morecard p { margin-top: 14px; font-size: 16px; color: #E4EBD8; }
-.morecard .btn { background: #fff; color: var(--ink); }
+.morecard h2 { max-width: 20ch; font-size: clamp(32px, 4vw, 46px); }
+.morecard p { margin-top: 16px; font-size: 18px; color: #E4EBD8; }
+.morecard .btn { background: #fff; color: var(--ink); font-size: 18px; padding: 18px 32px; }
 .morecard .btn:hover { background: var(--lime); }
-@media (max-width: 760px) { .morecard { grid-template-columns: 1fr; padding: 40px 28px; } }
+@media (max-width: 760px) { .morecard { grid-template-columns: 1fr; padding: 44px 28px; } .morecard .btn { width: 100%; text-align: center; } }
 
 /* ---------- footer ---------- */
 footer { background: var(--forest); color: #fff; margin-top: 40px; }
@@ -401,7 +401,7 @@ section.band:last-of-type { padding-bottom: 0; }
       </div>
       <div class="proofstrip" id="proofstrip">
         <div class="stat"><b><span data-count="25">0</span></b><span>person design practice across the airline</span></div>
-          <div class="stat"><b><span data-count="9">0</span><i>M+</i></b><span>members using what the practice designs</span></div>
+          <div class="stat"><b><span data-count="9">0</span><i>M+</i></b><span>Aeroplan members on the platform he designs for</span></div>
           <div class="stat"><b><span data-count="2">0</span><i>&times;</i></b><span>active membership after the loyalty relaunch</span></div>
           <div class="stat"><b><span data-count="1">0</span></b><span>design system, from customer apps to flight-crew tools</span></div>
       </div>
