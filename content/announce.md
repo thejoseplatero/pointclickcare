@@ -1,1 +1,1 @@
-A personal application by Jose Platero. Not affiliated with PointClickCare.
+This page is a live demo from the <a href="https://joseplatero.com/build" target="_blank" rel="noopener" style="color:#fff; font-weight:700; text-decoration:underline; text-underline-offset:3px;">Build with Jose</a> course. It shows the format students build for their own target companies. It is not a real application. Not affiliated with PointClickCare.

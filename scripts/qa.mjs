@@ -90,7 +90,7 @@ t('no auto-popup overlays', !/role="dialog"/.test(html));
 
 /* ---------- page anatomy (their product-detail structure) ---------- */
 section('page anatomy');
-t('announcement strip: one short line', /class="announce"/.test(html) && /A personal application by Jose Platero\. Not affiliated with PointClickCare\./.test(html));
+t('announcement strip: demo framing plus non-affiliation', /class="announce"/.test(html) && /live demo from the/.test(html) && /Not affiliated with PointClickCare\./.test(html));
 t('h1 is the candidate, product-page style', /<h1>Jose Platero<\/h1>/.test(html));
 t('statement: built the org, stated plainly', /Built Air Canada's design organization: the leadership team/.test(html));
 t('hero leads with design, not PM or martech', /Leads product design across Air Canada/.test(html));
